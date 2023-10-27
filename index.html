@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <form>
+            <label for="num1">Primer número:</label>
+            <input type="number" id="num1" required>
+            <br>
+            <label for="num2">Segundo número:</label>
+            <input type="number" id="num2" required>
+            <br>
+            <button type="button" onclick="sumar()">Sumar</button>
+            <button type="button" onclick="multiplicar()">Multiplicar</button>
+        </form>
+        <p id="resultado">Resultado: </p>
+    </div>
+    <script src="src/Script.js" type="module"></script>
+</head>
+</body>
 </html>
